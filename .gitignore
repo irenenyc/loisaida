@@ -1,0 +1,8 @@
+/vendor/
+/web/sites/default/files/
+/web/core/
+/web/modules/
+/web/themes/
+/web/sites/default/settings.php
+/web/sites/default/default.settings.php
+
