@@ -5,4 +5,4 @@
 /web/themes/
 /web/sites/default/settings.php
 /web/sites/default/default.settings.php
-
+*.sql
