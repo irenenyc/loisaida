@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f687b851cc5b496a8f7793a0a685ee4",
+    "content-hash": "0653aae2a7886509f3030bd6c193a5a4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1411,6 +1411,52 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core."
+        },
+        {
+            "name": "drupal/vvjs",
+            "version": "1.0.19",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/vvjs.git",
+                "reference": "1.0.19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/vvjs-1.0.19.zip",
+                "reference": "1.0.19",
+                "shasum": "a2db7a12142d84b5087b6b74410e2170f4c136ce"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.19",
+                    "datestamp": "1751235638",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alaa Haddad (alaahaddad.com)",
+                    "homepage": "https://www.drupal.org/u/flashwebcenter",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a Vanilla Javascript Slideshow format for Views.",
+            "homepage": "https://drupal.org/project/vvjs",
+            "support": {
+                "source": "https://git.drupalcode.org/project/vvjs",
+                "issues": "https://drupal.org/project/issues/vvjs"
+            }
         },
         {
             "name": "drush/drush",
