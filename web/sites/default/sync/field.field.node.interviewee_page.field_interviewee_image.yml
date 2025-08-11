@@ -1,0 +1,29 @@
+uuid: 507b278e-046b-4eda-b5e4-1ff2850f0622
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_interviewee_image
+    - media.type.image
+    - node.type.interviewee_page
+id: node.interviewee_page.field_interviewee_image
+field_name: field_interviewee_image
+entity_type: node
+bundle: interviewee_page
+label: interviewee_image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: adddf848-4d53-4ac0-a780-6997c09a1802
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oh_interview_file
+    - media.type.audio
+    - node.type.interviewee_page
+id: node.interviewee_page.field_oh_interview_file
+field_name: field_oh_interview_file
+entity_type: node
+bundle: interviewee_page
+label: 'oh interview file'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,26 @@
+uuid: 7a168f7c-6e54-4a63-845a-969be0a89ad7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio_snippets
+    - filter.format.plain_text
+    - node.type.interviewee_page
+  module:
+    - text
+id: node.interviewee_page.field_audio_snippets
+field_name: field_audio_snippets
+entity_type: node
+bundle: interviewee_page
+label: 'audio snippets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - plain_text
+field_type: text_with_summary
