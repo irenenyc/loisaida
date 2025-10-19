@@ -1,0 +1,9 @@
+uuid: a45485ac-c2d6-4a98-aa99-7acc581d16d9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Community Centers'
+vid: community_centers
+description: null
+weight: 0
+new_revision: false

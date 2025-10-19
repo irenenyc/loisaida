@@ -1,0 +1,21 @@
+uuid: 699be690-895a-4cc3-8f34-cfc8c30cb6c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_grid_brief_bio
+field_name: field_grid_brief_bio
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

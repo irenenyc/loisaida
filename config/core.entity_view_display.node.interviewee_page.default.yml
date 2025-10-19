@@ -1,0 +1,221 @@
+uuid: 744a91b8-3f1f-4f25-9b54-7dc9cb82cfeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.interviewee_page.field_audio_snippets
+    - field.field.node.interviewee_page.field_basic_biography
+    - field.field.node.interviewee_page.field_community_centers
+    - field.field.node.interviewee_page.field_community_gardens
+    - field.field.node.interviewee_page.field_grid_brief_bio
+    - field.field.node.interviewee_page.field_grid_image
+    - field.field.node.interviewee_page.field_interviewee_image
+    - field.field.node.interviewee_page.field_oh_interview_file
+    - field.field.node.interviewee_page.field_taxonomy_squats
+    - node.type.interviewee_page
+    - views.view.interviewee_slideshow
+  module:
+    - layout_builder
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: 'two columns 50/50'
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          6364a74d-d05d-4811-9bf2-79e5dac0d0fc:
+            uuid: 6364a74d-d05d-4811-9bf2-79e5dac0d0fc
+            region: first
+            configuration:
+              id: 'views_block:interviewee_slideshow-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+          235072d1-c98b-4cce-ad9c-e47e80e35fc9:
+            uuid: 235072d1-c98b-4cce-ad9c-e47e80e35fc9
+            region: second
+            configuration:
+              id: 'field_block:node:interviewee_page:field_oh_interview_file'
+              label: 'oh interview file'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7c4f982d-134e-4f6b-982d-d64b3e8325f8:
+            uuid: 7c4f982d-134e-4f6b-982d-d64b3e8325f8
+            region: second
+            configuration:
+              id: 'field_block:node:interviewee_page:field_audio_snippets'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          b7e3f7e3-b79d-4178-94fb-0538ddbf61b1:
+            uuid: b7e3f7e3-b79d-4178-94fb-0538ddbf61b1
+            region: first
+            configuration:
+              id: 'field_block:node:interviewee_page:field_taxonomy_squats'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          982441da-16e2-455d-adae-c1e33059cd56:
+            uuid: 982441da-16e2-455d-adae-c1e33059cd56
+            region: first
+            configuration:
+              id: 'field_block:node:interviewee_page:field_community_gardens'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          72c81fa1-fadb-44d6-80c4-95d9e7e81e24:
+            uuid: 72c81fa1-fadb-44d6-80c4-95d9e7e81e24
+            region: first
+            configuration:
+              id: 'field_block:node:interviewee_page:field_community_centers'
+              label: 'Community Centers'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          d06055f5-36da-4f2e-a4eb-1c06c213481d:
+            uuid: d06055f5-36da-4f2e-a4eb-1c06c213481d
+            region: second
+            configuration:
+              id: 'field_block:node:interviewee_page:field_basic_biography'
+              label: 'basic biography'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+id: node.interviewee_page.default
+targetEntityType: node
+bundle: interviewee_page
+mode: default
+content:
+  field_audio_snippets:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: first
+  field_community_gardens:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: first
+  field_grid_brief_bio:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: first
+  field_grid_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 107
+    region: first
+  field_interviewee_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 103
+    region: first
+  field_oh_interview_file:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_taxonomy_squats:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: first
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_basic_biography: true
+  field_community_centers: true

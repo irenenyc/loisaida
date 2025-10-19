@@ -1,0 +1,19 @@
+uuid: 0fba3c02-a328-40cf-bb3a-4da417a4a0f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grid_brief_bio
+    - node.type.interviewee_page
+id: node.interviewee_page.field_grid_brief_bio
+field_name: field_grid_brief_bio
+entity_type: node
+bundle: interviewee_page
+label: 'grid brief bio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

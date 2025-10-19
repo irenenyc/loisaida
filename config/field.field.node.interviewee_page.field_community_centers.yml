@@ -1,0 +1,29 @@
+uuid: e71e38cc-47a5-4fdc-828a-bf8db1c06240
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_community_centers
+    - node.type.interviewee_page
+    - taxonomy.vocabulary.community_centers
+id: node.interviewee_page.field_community_centers
+field_name: field_community_centers
+entity_type: node
+bundle: interviewee_page
+label: 'Community Centers'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      community_centers: community_centers
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

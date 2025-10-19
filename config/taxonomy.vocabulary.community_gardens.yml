@@ -1,0 +1,9 @@
+uuid: 2a7367b0-a6e0-45d2-984e-320752c9e47a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Community Gardens'
+vid: community_gardens
+description: null
+weight: 0
+new_revision: false

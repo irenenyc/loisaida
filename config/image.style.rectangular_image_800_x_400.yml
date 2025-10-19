@@ -1,0 +1,15 @@
+uuid: e3cbef3c-c8b7-4f43-8ec8-67d766bd6bd8
+langcode: en
+status: true
+dependencies: {  }
+name: rectangular_image_800_x_400
+label: 'rectangular image 800 x 400'
+effects:
+  abbfe081-d107-4451-b6d3-193126826369:
+    uuid: abbfe081-d107-4451-b6d3-193126826369
+    id: image_crop
+    weight: 1
+    data:
+      width: 800
+      height: 400
+      anchor: center-center

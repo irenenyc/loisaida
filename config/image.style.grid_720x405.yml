@@ -1,0 +1,15 @@
+uuid: 1efc6c20-fe6a-4d26-a324-aaf2325dae9a
+langcode: en
+status: true
+dependencies: {  }
+name: grid_720x405
+label: 'grid 720x405'
+effects:
+  4931c009-e49f-4cc3-8739-23281f5a32c4:
+    uuid: 4931c009-e49f-4cc3-8739-23281f5a32c4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 405
+      anchor: center-center

@@ -5,8 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.interviewee_page.field_audio_snippets
+    - field.field.node.interviewee_page.field_basic_biography
+    - field.field.node.interviewee_page.field_community_centers
+    - field.field.node.interviewee_page.field_community_gardens
+    - field.field.node.interviewee_page.field_grid_brief_bio
+    - field.field.node.interviewee_page.field_grid_image
     - field.field.node.interviewee_page.field_interviewee_image
     - field.field.node.interviewee_page.field_oh_interview_file
+    - field.field.node.interviewee_page.field_taxonomy_squats
     - node.type.interviewee_page
   module:
     - user
@@ -22,5 +28,11 @@ content:
     region: content
 hidden:
   field_audio_snippets: true
+  field_basic_biography: true
+  field_community_centers: true
+  field_community_gardens: true
+  field_grid_brief_bio: true
+  field_grid_image: true
   field_interviewee_image: true
   field_oh_interview_file: true
+  field_taxonomy_squats: true

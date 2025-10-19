@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.interviewee_page.field_audio_snippets
+    - field.field.node.interviewee_page.field_basic_biography
+    - field.field.node.interviewee_page.field_community_centers
+    - field.field.node.interviewee_page.field_community_gardens
+    - field.field.node.interviewee_page.field_grid_brief_bio
+    - field.field.node.interviewee_page.field_grid_image
     - field.field.node.interviewee_page.field_interviewee_image
     - field.field.node.interviewee_page.field_oh_interview_file
+    - field.field.node.interviewee_page.field_taxonomy_squats
     - node.type.interviewee_page
   module:
     - media_library
@@ -32,6 +38,49 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
+  field_basic_biography:
+    type: text_textarea
+    weight: 124
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_community_centers:
+    type: entity_reference_autocomplete
+    weight: 127
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_community_gardens:
+    type: entity_reference_autocomplete
+    weight: 126
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grid_brief_bio:
+    type: string_textfield
+    weight: 128
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grid_image:
+    type: media_library_widget
+    weight: 129
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
   field_interviewee_image:
     type: media_library_widget
     weight: 123
@@ -45,6 +94,16 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_taxonomy_squats:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path
